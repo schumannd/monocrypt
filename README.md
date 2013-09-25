@@ -13,7 +13,7 @@ python monoCrypt.py [/path/to/cleartext.txt]
 
 decryption:
 
-python monoCrypt.py [/path/to/key.txt] [/path/to/cypher.txt]
+python monoCrypt.py [/path/to/cypher.txt] [/path/to/key.txt]
 
 Warning
 =======
