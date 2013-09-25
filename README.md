@@ -7,13 +7,13 @@ Simple monalphabetic encryption and decryption tool
 
 Python > 2.6 required:
 
-how to encrypt using this monoalphabetic encryption tool:
+how to use this monoalphabetic encryption tool
 
-python monoCrypt.py [/path/to/cleartext.txt]
+encryption:
+python monoCrypt.py [/path/to/clearTextFile]
 
 decryption:
-
-python monoCrypt.py [/path/to/cypher.txt] [/path/to/key.txt]
+python monoCrypt.py [/path/to/cypherFile] [/path/to/keyFile]
 
 Warning
 =======

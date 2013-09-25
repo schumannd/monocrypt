@@ -39,16 +39,16 @@ def decrypt(key, cypher):
     f.write(clearText)
 
 def readDecryptFiles():
-    with open(sys.argv[1], "r") as cypherfile:
-        cypher=cypherfile.read()
-    with open(sys.argv[2], "r") as keyfile:
-        key=keyfile.read()
+    with open(sys.argv[1], "r") as cypherFile:
+        cypher=cypherFile.read()
+    with open(sys.argv[2], "r") as keyFile:
+        key=keyFile.read()
     decrypt(key,cypher)
 
 def readEncryptFile():
-    with open(sys.argv[1], "r") as cleartextfile:
-        cleartext=cleartextfile.read()
-    encrypt(cleartext)
+    with open(sys.argv[1], "r") as clearTextFile:
+        clearText=clearTextFile.read()
+    encrypt(clearText)
 
 def main():
     if len(sys.argv) == 2:
@@ -57,10 +57,11 @@ def main():
         readDecryptFiles()
     else:
         print """
-        how to encrypt using this monoalphabetic encryption tool:
-        ./monoCrypt.py [/path/to/cleartext.txt] \n
+        usage of this monoalphabetic encryption tool\n
+        encrypt:
+        python monoCrypt.py [/path/to/clearTextFile] \n
         decryption:
-        ./monoCrypt.py [/path/to/cypher.txt] [/path/to/key.txt] \n"""
+        python monoCrypt.py [/path/to/cypherFile] [/path/to/keyFile] \n"""
 
 if __name__ == "__main__":
     sys.exit(main())
